@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yung_coder.oluwole.a3levelauth.Browser">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/button_browse"
+        android:id="@+id/browser_url"
+        android:inputType="textUri"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter URL"
+        android:layout_toLeftOf="@+id/button_browse" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_browse"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFF"
+        android:background="@color/colorPrimary"
+        android:text="Browse"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/browser_url"
+        android:layout_marginTop="10dp"
+        android:id="@+id/browser_view" />
+
+</RelativeLayout>

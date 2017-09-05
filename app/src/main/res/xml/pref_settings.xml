@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Phone Number">
+
+        <EditTextPreference
+            android:defaultValue="09084678574"
+            android:key="phone_number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Change Phone Number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Security Question">
+
+        <EditTextPreference
+            android:defaultValue="What is Your Name?"
+            android:key="security_question"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Your Security Question" />
+
+        <EditTextPreference
+            android:defaultValue="Yetunde"
+            android:key="security_answer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Your Answer" />
+    </PreferenceCategory>
+</PreferenceScreen>

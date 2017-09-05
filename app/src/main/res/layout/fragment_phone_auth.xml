@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yung_coder.oluwole.a3levelauth.PhoneAuth">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Phone Number Verification"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:id="@+id/phone_title"
+        />
+
+    <ProgressBar
+        android:id="@+id/phone_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_title"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:id="@+id/phone_panel"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send OTP Code"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:id="@+id/button_phone_number"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/verify_panel"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Enter OTP Code Sent"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:inputType="phone"
+                android:id="@+id/text_phone_number"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify Phone Number"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:id="@+id/button_verify_number"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
